@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .mb-3 .input-box {
+            position: relative;
+        }
+        
+        .input-box input {
+            width: 100%;
+            height: 53px;
+            color: #000;
+            background: none;
+            font-size: 1.06rem;
+            font-weight: 500;
+            border-radius: 4px;
+            letter-spacing: 1.4px;
+            border: 1px solid #aaa;
+            padding: 0 2.85rem 0 1rem;
+        }
+        
+        .input-box span {
+            position: absolute;
+            right: 13px;
+            cursor: pointer;
+            line-height: 53px;
+            color: #707070;
+        }
+        
+        .input-box span:hover {
+            color: #43A047 !important;
+        }
+    </style>
+</head>
+
+<body ng-app="myApp" ng-controller="myController">
+
+
+    <!-- Button trigger modal -->
+    <button type="button" onclick="setValue()" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <a href="/share-on-facebook">
+                            <img src="https://befc.com.au/wp-content/uploads/2019/07/2-21918_download-transparent-background-facebook-logo-clipart-facebook-logo.jpg" width="100" alt="">
+                        </a>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="input-box">
+                            <input type="text" id="myInput" disabled>
+                            <span class="material-symbols-rounded"><i class="fa-regular fa-copy"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+
+</body>
+
+</html>
