@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -48,8 +48,8 @@
 
     <!-- Button trigger modal -->
     <button type="button" onclick="setValue()" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-</button>
+        Launch demo modal
+    </button>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -69,7 +69,7 @@
 
                     <div class="mb-3">
                         <div class="input-box">
-                            <input type="text" id="myInput" disabled>
+                            <input type="text" id="myInput">
                             <span class="material-symbols-rounded"><i class="fa-regular fa-copy"></i></span>
                         </div>
                     </div>
